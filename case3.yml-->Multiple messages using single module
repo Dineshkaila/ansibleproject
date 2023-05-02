@@ -1,0 +1,9 @@
+---
+ - name: multiple messages using single module
+   hosts: lab1
+   tasks:
+     - debug:
+        msg:
+         - "welcome to Varains"
+         - "welcome to Nareshins"
+         - "welcome to Guruins"
