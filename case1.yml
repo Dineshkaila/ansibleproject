@@ -1,0 +1,5 @@
+---
+ - name: printing msg
+   hosts: vlab
+   tasks:
+    - debug: msg="welcome to varains"
