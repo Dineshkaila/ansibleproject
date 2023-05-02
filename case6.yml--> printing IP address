@@ -1,0 +1,9 @@
+---
+ - name: printing
+   hosts: lab1
+   tasks:
+     - name: printing IP address
+       debug:
+#         msg: "My ip adress of server : {{ansible_default_ipv4.address}}"
+#
+          var: ansible_default_ipv4.address
