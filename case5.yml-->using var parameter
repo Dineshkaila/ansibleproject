@@ -1,0 +1,7 @@
+---
+ - name: var parameter
+   hosts: lab1
+   tasks:
+    - name: printing
+      debug:
+       var: inventory_hostname
