@@ -1,0 +1,6 @@
+---
+ - name: checking kernel version
+   hosts: vlab
+   tasks:
+       - name: server kernel
+         command: uname -a
