@@ -1,0 +1,11 @@
+---
+ - name: showing vriables
+   hosts: vlab
+   vars:
+        os: "linux"
+        cloud: "aws"
+        tools: "devops"
+   tasks:
+     - name: debug message
+       debug:
+           msg: "I love {{os}}"
