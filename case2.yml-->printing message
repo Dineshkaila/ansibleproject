@@ -1,0 +1,7 @@
+# ansibleproject
+---
+ - name: printing msg
+   hosts: lab1
+   tasks:
+    - debug:
+       msg: "welcome to varains"
