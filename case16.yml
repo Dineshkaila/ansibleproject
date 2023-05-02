@@ -1,0 +1,14 @@
+---
+ - name: tags
+   hosts: vlab
+   tasks:
+     - name: kernel version
+       command: uname -a
+       register: kernel
+       tags: ker
+     - debug: var=kernel.stdout
+     - name: date
+       command: date
+       register: date
+       tags: date
+     - debug: var=date.stdout
