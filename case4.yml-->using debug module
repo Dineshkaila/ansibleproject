@@ -1,0 +1,7 @@
+---
+ - name: Usage of debug module
+   hosts: lab1
+   tasks:
+    - name: printing
+      debug:
+        msg: "The hostname is : {{inventory_hostname}}"
