@@ -1,0 +1,8 @@
+---
+ - name: Usage of debug module
+   hosts: vlab
+   tasks:
+    - name:
+      debug:
+        msg: "My ip address of server : {{ansible_default_ipv4.address}}"
+        verbosity: 1
