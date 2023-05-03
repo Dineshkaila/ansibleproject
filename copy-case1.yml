@@ -1,9 +1,1 @@
----
- - name: create data in file
-   hosts: vlab
-   tasks:
-   - name: copy the data in file
-     copy: dest=/tmp/dinesh content='THIS IS MY PERSONAL DATA'
 
-   - name: backup and modify the file
-     copy: dest=/tmp/dinesh content='MY NEWLY ADDED DATA' backup=yes
