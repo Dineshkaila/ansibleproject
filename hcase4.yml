@@ -1,6 +1,6 @@
 ---
  - name: with register and when
-   hosts: nagu9
+   hosts: vlab
    tasks:
    - name: copy file
      copy: src=/etc/fstab dest=/var/www/html/index.html
