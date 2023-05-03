@@ -1,0 +1,9 @@
+---
+ - name: create file and add data in file
+   hosts: vlab
+   tasks:
+   - name: create file
+     file: dest=/tmp/dinesh state=touch mode=777 owner=dinesh group=bat22a
+
+   - name: add data in file
+     lineinfile: dest=/tmp/dinesh line='THIS IS MY PERSONAL DATA'
